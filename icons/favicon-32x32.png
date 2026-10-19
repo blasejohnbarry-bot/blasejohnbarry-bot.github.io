@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amit</title>
+    <meta name="description" content="backend engineer · terminal tools · mobile apps · oss lover" />
+    <meta name="author" content="Amit" />
+    <link rel="canonical" href="https://heyamit.dev/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="amit" />
+    <meta property="og:description" content="backend engineer · terminal tools · mobile apps · oss lover" />
+    <meta property="og:url" content="https://heyamit.dev/" />
+    <meta property="og:site_name" content="heyamit.dev" />
+    <meta property="og:image" content="https://heyamit.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="vyrx — Amit's developer portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="profile:first_name" content="Amit" />
+    <meta property="profile:username" content="vyrx" />
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@amitwt" />
+    <meta name="twitter:creator" content="@amitwt" />
+    <meta name="twitter:title" content="amit" />
+    <meta name="twitter:description" content="backend engineer · terminal tools · mobile apps · oss lover" />
+    <meta name="twitter:image" content="https://heyamit.dev/og-image-twitter.png" />
+    <meta name="twitter:image:alt" content="vyrx — Amit's developer portfolio" />
+
+    <!-- JSON-LD: ProfilePage + Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "dateCreated": "2024-01-01",
+      "dateModified": "2026-08-17",
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://heyamit.dev/#amit",
+        "name": "Amit",
+        "alternateName": ["vyrx", "amitwt", "vyrx-dev"],
+        "url": "https://heyamit.dev",
+        "image": "https://heyamit.dev/avatar.png",
+        "jobTitle": "Backend Engineer",
+        "description": "backend engineer. terminal tools and mobile apps. oss lover.",
+        "sameAs": [
+          "https://github.com/vyrx-dev",
+          "https://x.com/amitwt",
+          "https://linkedin.com/in/vyrx"
+        ],
+        "knowsAbout": [
+          "Flutter", "Dart", "Go", "Node.js", "TypeScript", "JavaScript",
+          "React", "Bash", "Linux", "NixOS", "Docker", "Neovim",
+          "Mobile App Development", "TUI Development", "CLI Tools",
+          "Open Source", "Dotfiles", "Shell Scripting"
+        ]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://heyamit.dev",
+      "name": "heyamit.dev",
+      "description": "Amit — flutter apps, TUI tools, neovim plugins, and open source.",
+      "author": {
+        "@id": "https://heyamit.dev/#amit"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: Key Projects -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Symphony",
+        "description": "a linux desktop environment built on omarchy with custom themes, a TUI manager, and integrated web apps.",
+        "url": "https://symphony.heyamit.dev",
+        "codeRepository": "https://github.com/vyrx-dev/symphony",
+        "programmingLanguage": ["Bash", "Go"],
+        "creator": { "@id": "https://heyamit.dev/#amit" },
+        "operatingSystem": "Linux"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Lumix",
+        "description": "a minimalist flashlight app with gesture-based brightness control, built with Flutter and native Android platform channels.",
+        "codeRepository": "https://github.com/vyrx-dev/lumix.git",
+        "programmingLanguage": ["Dart", "Kotlin"],
+        "creator": { "@id": "https://heyamit.dev/#amit" }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "void.nvim",
+        "description": "a neovim colorscheme plugin built around the void color palette. listed on vimcolorschemes.com.",
+        "url": "https://vimcolorschemes.com/vyrx-dev/void.nvim",
+        "codeRepository": "https://github.com/vyrx-dev/void.nvim",
+        "programmingLanguage": "Lua",
+        "creator": { "@id": "https://heyamit.dev/#amit" }
+      }
+    ]
+    </script>
+
+    <!-- favicon -->
+    <link rel="icon" href="/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- fonts (preconnect to avoid render-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" />
+
+    <!-- theme color -->
+    <meta name="theme-color" content="#0d0e0f" />
+    <script type="module" crossorigin src="/assets/index-CxQiMP7g.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CKEgs7Fw.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>this site requires javascript to run.</noscript>
+  </body>
+</html>
