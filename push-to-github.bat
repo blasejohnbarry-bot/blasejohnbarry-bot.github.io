@@ -4,34 +4,30 @@ echo ========================================================
 echo   Deploy John Barry V. Blase Portfolio to GitHub
 echo ========================================================
 echo.
-echo Step 1: Create a public repository at https://github.com/new
-echo         Recommended Repository Name: blasejohnbarry-bot.github.io
+echo Target Repository:
+echo https://github.com/blasejohnbarry-bot/blasejohnbarry-bot.github.io
 echo.
-set /p REPO_URL="Enter your repository URL (e.g. https://github.com/blasejohnbarry-bot/blasejohnbarry-bot.github.io.git): "
-if "%REPO_URL%"=="" (
-    echo [!] No URL provided. Aborted.
-    pause
-    exit /b
-)
+echo Pushing as user 'blasejohnbarry-bot'...
+echo (A browser window may open asking you to sign in with GitHub)
+echo.
 
-echo.
-echo Linking repository to origin...
-git remote remove origin 2>nul
-git remote add origin %REPO_URL%
+git remote set-url origin https://blasejohnbarry-bot@github.com/blasejohnbarry-bot/blasejohnbarry-bot.github.io.git
 git branch -M main
-
-echo.
-echo Uploading files to GitHub...
 git push -u origin main
 
-echo.
-echo ========================================================
-echo   Upload complete!
-echo.
-echo   Next Step (Enable GitHub Pages):
-echo   1. Go to your GitHub repository -> Settings -> Pages
-echo   2. Under 'Branch', select 'main' and folder '/(root)'
-echo   3. Click Save!
-echo ========================================================
+if %ERRORLEVEL% EQU 0 (
+    echo.
+    echo ========================================================
+    echo   [SUCCESS] Upload complete!
+    echo.
+    echo   Next Step (Enable GitHub Pages):
+    echo   1. Open: https://github.com/blasejohnbarry-bot/blasejohnbarry-bot.github.io/settings/pages
+    echo   2. Under 'Branch', select 'main' and folder '/(root)'
+    echo   3. Click Save!
+    echo ========================================================
+) else (
+    echo.
+    echo [!] If it says permission denied, please sign in as 'blasejohnbarry-bot' in the browser prompt or remove old credentials from Windows Credential Manager.
+)
 echo.
 pause
